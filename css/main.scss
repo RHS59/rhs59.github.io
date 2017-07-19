@@ -1,0 +1,585 @@
+$primary: #5168a5;
+$secondary:#f15148; 
+$tertiary: #FFBC00;
+$lightgrey:#f2f2f2;
+$eggshell: #E6E6E6;
+$mediumgrey:#999999;
+$darkgrey:#404040;
+$text: #1a0033;
+
+a:-webkit-any-link {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+	color: $tertiary;
+	transition: 0.5s;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+	* {
+		box-sizing: border-box;
+	}
+	#about {
+		height: auto;
+		#content {
+			h2, h3, h4 {
+				padding-bottom: 8px;
+			}
+			p {
+
+			}
+			h3 {
+				font-size: 1em;
+			}
+			h4 {
+				font-size: 1em;
+				color: $darkgrey;
+			}
+		}
+	}
+	body {
+		background-color: $eggshell;
+		height: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		color: $darkgrey;
+	}
+	.caps {
+		text-transform: uppercase;
+	}
+	.clearfix {
+		&:before, &:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	.color-red {
+		background-color: #F00;
+	}
+	.color-yellow {
+		background-color: #FF3;
+	}
+
+	.color-cyan {
+		background-color: #00F;
+	}
+
+	.color-green {
+		background-color: #0F0;
+	}
+
+	#container {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	#content {
+
+		li {
+			display: inline;
+			float: left;
+			padding-top: 8px;
+			padding-right: 32px;
+		}
+		h2 {
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.5em;
+			font-weight: 700;
+			text-align: center;
+		}
+		h3 {
+			font-size: 1em;
+		}
+		h4 {
+			color: $secondary;
+		}
+		h5 {
+			font-size: 14px;
+			padding-bottom: 4px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	[class*="col-"] {
+		float: left;
+	}
+
+	#edu {
+		height: auto;
+	}
+	#exp {
+		height: auto;	
+	}
+
+	html {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		height: 100%;
+	}
+
+	header, main, article {
+		height: 100%;
+	}
+	#hero {
+		background-color: $primary;
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			color: $eggshell;
+			text-align:center;
+			padding: 128px 8px 8px 8px;
+			font-size: 2em;
+		}
+
+		.title {
+			font-family: 'Roboto', sans-serif;
+			color: $tertiary;
+			text-align:center;
+			padding: 1% 1% 0% 1%;
+			font-size: 1em;
+		}
+		hr {
+			margin: 2em;
+		}
+		li {
+			color: $eggshell;
+			display: inline;
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+	}
+	#left {
+		background-color: $eggshell;
+		height: 100%;
+		z-index: 3;
+	}
+	#right {
+		z-index: 2;
+		height: 100%;
+	}
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	p {
+		line-height: 1.5em;
+	}
+	.secondary-bg {
+		background-color: $secondary;
+		color: $eggshell;
+		h3 {
+			color: $darkgrey;
+			font-weight: 700;
+		}
+	}
+	#skl {
+		height: auto;
+
+		.wrapper {
+			border-bottom: none;
+		}
+	}
+	.socialmedia {
+		padding: 32px 0px 0px 0px;
+		margin: auto;
+		width: 50%;
+	}
+	.wrapper {
+		padding: 8px 16px 8px 24px;
+		border-bottom: 1px solid $darkgrey;
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px){
+	* {
+		box-sizing: border-box;
+	}
+	#about {
+		height: auto;
+		#content {
+			h2, h3, h4 {
+				padding-bottom: 8px;
+			}
+			p {
+
+			}
+			h3 {
+				font-size: 1em;
+			}
+			h4 {
+				font-size: 1em;
+				color: $darkgrey;
+			}
+		}
+	}
+	body {
+		background-color: $eggshell;
+		height: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		color: $darkgrey;
+	}
+	.caps {
+		text-transform: uppercase;
+	}
+	.clearfix {
+		&:before, &:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	.color-red {
+		background-color: #F00;
+	}
+	.color-yellow {
+		background-color: #FF3;
+	}
+
+	.color-cyan {
+		background-color: #00F;
+	}
+
+	.color-green {
+		background-color: #0F0;
+	}
+
+	#container {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	#content {
+
+		li {
+			display: inline;
+			float: left;
+			padding-top: 8px;
+			padding-right: 32px;
+		}
+		h2 {
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.5em;
+			font-weight: 700;
+			text-align: center;
+		}
+		h3 {
+			font-size: 1em;
+		}
+		h4 {
+			color: $secondary;
+		}
+		h5 {
+			font-size: 14px;
+			padding-bottom: 4px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	[class*="col-"] {
+		float: left;
+	}
+
+	#edu {
+		height: auto;
+	}
+	#exp {
+		height: auto;	
+	}
+
+	html {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		height: 100%;
+	}
+
+	header, main, article {
+		height: 100%;
+	}
+	#hero {
+		background-color: $primary;
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			color: $eggshell;
+			text-align:center;
+			padding: 128px 8px 8px 8px;
+			font-size: 2.6em;
+		}
+
+		.title {
+			font-family: 'Roboto', sans-serif;
+			color: $tertiary;
+			text-align:center;
+			padding-top: 1%;
+			padding-bottom: 80%;
+			font-size: 2em;
+		}
+		hr {
+			margin: 2em;
+		}
+		li {
+			color: $eggshell;
+			display: inline;
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+	}
+	#left {
+		background-color: $eggshell;
+		height: 100%;
+		z-index: 3;
+	}
+	#right {
+		z-index: 2;
+		height: 100%;
+	}
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	p {
+		line-height: 1.5em;
+	}
+	.secondary-bg {
+		background-color: $secondary;
+		color: $eggshell;
+		h3 {
+			color: $darkgrey;
+			font-weight: 700;
+		}
+	}
+	#skl {
+		height: auto;
+
+		.wrapper {
+			border-bottom: none;
+		}
+	}
+	.socialmedia {
+		padding: 32px 0px 0px 0px;
+		margin: auto;
+		width: 50%;
+	}
+	.wrapper {
+		padding: 8px 16px 8px 24px;
+		border-bottom: 1px solid $darkgrey;
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	* {
+		box-sizing: border-box;
+	}
+	#about {
+		height: auto;
+		#content {
+			h2, h3, h4 {
+				padding-bottom: 8px;
+			}
+			p {
+
+			}
+			h3 {
+				font-size: 1em;
+			}
+			h4 {
+				font-size: 1em;
+				color: $darkgrey;
+			}
+		}
+	}
+	body {
+		background-color: $eggshell;
+		height: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		color: $darkgrey;
+	}
+	.caps {
+		text-transform: uppercase;
+	}
+	.clearfix {
+		&:before, &:after {
+			content: " ";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	.color-red {
+		background-color: #F00;
+	}
+	.color-yellow {
+		background-color: #FF3;
+	}
+
+	.color-cyan {
+		background-color: #00F;
+	}
+
+	.color-green {
+		background-color: #0F0;
+	}
+
+	#container {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	#content {
+
+		li {
+			display: inline;
+			float: left;
+			width: 25%;
+			padding-top: 8px;
+			padding-right: 4px;
+		}
+		h2 {
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.5em;
+			font-weight: 700;
+			text-align: left;
+		}
+		h3 {
+			font-size: 1em;
+		}
+		h4 {
+			color: $secondary;
+		}
+		h5 {
+			line-height: 1.25em;
+			font-size: 14px;
+			padding: 8px 0px;
+		}
+		hr {
+			display:none;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	[class*="col-"] {
+		float: left;
+	}
+
+	#edu {
+		height: auto;
+	}
+	#exp {
+		height: auto;	
+	}
+
+	html {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		height: 100%;
+	}
+
+	header, main, article {
+		height: 100%;
+	}
+	#hero {
+		background-color: $primary;
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			color: $eggshell;
+			text-align:center;
+			padding-top: 35%;
+			font-size: 3em;
+		}
+
+		.title {
+			font-family: 'Roboto', sans-serif;
+			color: $tertiary;
+			text-align:center;
+			padding-top: 1%;
+			padding-bottom: 75%;
+			font-size: 2.5em;
+		}
+		hr {
+			margin: 2em;
+		}
+		li {
+			color: $eggshell;
+			display: inline;
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+	}
+	#left {
+		background-color: $eggshell;
+		height: 100%;
+		z-index: 3;
+	}
+	#right {
+		z-index: 2;
+		height: 100%;
+	}
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	p {
+		line-height: 1.5em;
+	}
+	.secondary-bg {
+		background-color: $secondary;
+		color: $eggshell;
+		h3 {
+			color: $darkgrey;
+			font-weight: 700;
+		}
+	}
+	#skl {
+		height: auto;
+		
+		.wrapper {
+			border-bottom: none;
+		}
+	}
+	.socialmedia {
+		padding: 32px 0px 0px 0px;
+		margin: auto;
+		width: 50%;
+	}
+	.wrapper {
+		padding: 8px 16px 8px 24px;
+		border-bottom: 1px solid $darkgrey;
+		height: 100%;
+	}
+}
